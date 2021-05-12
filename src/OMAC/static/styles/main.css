@@ -56,6 +56,17 @@ section.fondo-gris {
     width: 20%;
 }
 
+.Imagen-Derecha{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    clear: right;
+}
+
 .link_marron{
     text-decoration: none;
     font-size: larger;
@@ -64,4 +75,12 @@ section.fondo-gris {
 
 .link_marron:hover, .link_marron:active{
     color: darkslateblue;
+}
+
+.listas{
+    padding-left: 25%;
+    list-style-position: inside;
+    width: 50%;
+    margin: auto;
+    text-align: left;
 }

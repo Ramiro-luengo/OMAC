@@ -1,28 +1,24 @@
 from django import template
 from django.db import reset_queries
 from django.http import HttpResponse
+from django.http.request import HttpRequest
 from django.template import context, loader
+from django.shortcuts import render
 from .models import Item
 
 
 def home(request):
     template = loader.get_template("core/home.html")
     context = {}
-    # Se puede setear context llenando ese dict.
-    # return HttpResponse(template.render(context,request))
     return HttpResponse(template.render(context,request))
 
-def item_list(request):
+def item_list(request: HttpRequest):
+    item_id = request.GET.get('filtro')
     items = list(Item.objects.all())
-    response = "<h1>ItemList:\n<ul>"
-    for i in items:
-        response = response + "<li>"
-        response = response + "<p>Name: " + i.name + "</p>\n"
-        response = response + "</li>"
-    
-    response = response + "</ul></h1>"
-
-    return HttpResponse(response)
+    context = {'item_list' : items}
+    if item_id:
+        context = {'item_list' : [Item.objects.get(id=item_id)]}
+    return HttpResponse(render(request, 'core/items.html', context))
 
 def item(request,name):
     i = Item.objects.get(name=name)

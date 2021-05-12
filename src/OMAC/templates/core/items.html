@@ -1,0 +1,32 @@
+{% extends 'core/layout.html' %}
+{% load static %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/main.css' %}">
+</head>
+
+{% block title %}
+    <h1 style="text-align: center">OMAC</h1>
+    <h2 style="text-align: center; font-family: Bahnschrift; font-size: large">Texto aburrido sobre OMAC</h2>
+    <img class="Imagen-Derecha" src="{% static 'back.jpg' %}" style="object-fit: contain;" height="100" alt="F">
+{% endblock %}
+
+{% block content %}
+    <div style="text-align: center; margin: auto; width: 50%;">
+        <form action="/items" method="GET">
+            Buscar por ID
+            <input type="text" name="filtro" placeholder="Ingrese el ID de la operacion a buscar">
+            <input type="submit" value="Buscar">
+        </form>
+
+        <ul class="listas">
+            {% for item in item_list %}
+                <li>
+                    <i class="fas fa-hand-point-right"></i>
+                    <a class="link_marron" href="{{item.name}}">{{item.id}} - {{item.name}}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+{% endblock %}
