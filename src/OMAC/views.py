@@ -8,7 +8,7 @@ from .models import Item
 def home(request):
     template = loader.get_template("core/home.html")
     context = {}
-    # Se puede setear context. context = {'algo' : 'algo'}
+    # Se puede setear context llenando ese dict.
     # return HttpResponse(template.render(context,request))
     return HttpResponse(template.render(context,request))
 
