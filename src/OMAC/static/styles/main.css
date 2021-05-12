@@ -1,0 +1,67 @@
+body {
+    margin: auto;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    /*background: #155592;*/
+    background: #F4F6F2;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+h1 {
+    font-weight: 300;
+    font-family: Bahnschrift;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+.barraNavegacion{
+    padding: 20px;
+    /*background: aliceblue;*/
+    background: #B69C7B;
+    font-size:20px;
+    border-bottom-color: black;
+    border-bottom-style: groove;
+}
+footer {
+    position: relative;
+    top: 5%;
+}
+
+section.fondo-gris {
+    /*background: #b9314f;*/
+    background: #544E55;
+    border-radius: 10px;
+    border-style: solid;
+    margin: 50px;
+    font: message-box;
+    padding-left: 25px;
+    color: whitesmoke;
+    border-color: black;
+    padding-bottom: 25px;
+    padding-right: 25px;
+}
+
+.Imagen-Centrada{
+    padding-top: 20px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 60px;
+    width: 20%;
+}
+
+.link_marron{
+    text-decoration: none;
+    font-size: larger;
+    color: brown;
+}
+
+.link_marron:hover, .link_marron:active{
+    color: darkslateblue;
+}

@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'styles/main.css' %}">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        {% block title %}
+        {% endblock %}
+    </head>
+
+    <body>
+        <div class="">
+            <h1>
+                <a class="link_marron" href="/">Home</a>
+                <a class="link_marron" href="/items/">Items</a>
+            </h1>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
