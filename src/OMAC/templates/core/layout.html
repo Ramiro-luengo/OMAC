@@ -6,22 +6,28 @@
         {% block title %}
         {% endblock %}
     </head>
-
+    
     <body>
-        <div class="">
-            <h1>
-                <a class="link_marron" href="/">Home</a>
-                <a class="link_marron" href="/items/">Items</a>
-            </h1>
-        </div>
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                {% block content %}
-                {% endblock %}
+        <div class='body'>
+            <div style="color:#848D95;">
+                <h1>
+                    <a class="link_marron" href="/">Home</a>
+                    <a class="link_marron" href="/items/">Items</a>
+                </h1>
+            </div>
+            <div class="content container">
+                <div class="row">
+                    <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
+                    </div>
                 </div>
             </div>
         </div>
     </body>
-
+    <footer>
+        <div class="footer-text">
+            <h2 style="padding: 20px;">Algo sobre el sitio, bla bla bla</h2>
+        </div>
+    </footer>
 </html>

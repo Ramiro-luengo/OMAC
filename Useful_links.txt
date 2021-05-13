@@ -1,0 +1,3 @@
+https://www.youtube.com/watch?v=jFnmQEHOsNk&ab_channel=pildorasinformaticas
+
+https://docs.hektorprofe.net/django/web-personal/creando-cabecera-dinamica/
