@@ -3,8 +3,10 @@
     <head>
         <link rel="stylesheet" type="text/css" href="{% static 'styles/main.css' %}">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        {% block title %}
-        {% endblock %}
+        <div class="head-color">
+            {% block title %}
+            {% endblock %}
+        </div>
     </head>
     
     <body>
@@ -27,7 +29,7 @@
     </body>
     <footer>
         <div class="footer-text">
-            <h2 style="padding: 20px;">Algo sobre el sitio, bla bla bla</h2>
+            <h2 style="padding: 20px;">Something about the site, bla bla bla.</h2>
         </div>
     </footer>
 </html>
