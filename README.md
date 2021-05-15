@@ -5,4 +5,4 @@ Simple webpage made with Django framework that runs on a python environment, inc
 
 Page preview:
 
-![alt text](https://github.com/Ramiro-luengo/OMAC/pagePreview)
+![alt text](https://github.com/Ramiro-luengo/OMAC/blob/main/pagePreview.PNG)
